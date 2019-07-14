@@ -17517,8 +17517,8 @@ Epoch [   50/   50] | d_real_loss: 0.01206737 | d_fake_loss: 0.01369919 | g_loss
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer:</strong></p>
 <ul>
-<li>Most images of the dataset don't contain the whole faces. It seems that most images are missing the chins. I am curious to see how the model would react if we make the dataset to contain the whole faces.</li>
-<li>The people in the dataset have their own styles, e.g. some have mustaches, some wear sunglasses, etc. I am wondering if it can help the model to converge if we use the dataset that have the images of the people with similar styles, e.g. a dataset that contains only the people with no mustache.</li>
+<li>Most images of the dataset don't contain the whole faces(chins are cropped out). I am curious to see how the result would change if a dataset with the whole faces is given.</li>
+<li>The people in the dataset have their own styles, e.g. some have mustaches, some wear sunglasses, etc. I am wondering if it can help the GAN to converge if we use the dataset that have the images of the people with similar styles, e.g. a dataset that contains only the people with mustache.</li>
 <li>While I was doing the research for this project, I heard that multiple fully connected layers can improve the performance of GANs.</li>
 <li>Also, residual networks like we used in CycleGAN may improve the model.</li>
 <li>I added a kind of 'pre-training' step of the discriminator before the main training loop, and I think it helped.</li>
